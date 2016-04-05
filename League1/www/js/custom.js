@@ -343,7 +343,7 @@ function onSuccess(contacts) {
 	for (var i = 0; i < contacts.length; i++) {
 		if (contacts[i].displayName != undefined) {
 
-			$(".contactlist").append('<li class="champli">' + contacts[i].displayName + '<a class = "ui-btn" href="sms:' + contacts[i].phoneNumbers[0].value + ';body=doe mee potta" ><span class="invite"></a></li>');
+			$(".contactlist").append('<li class="champli">' + contacts[i].displayName + '<a class = "ui-btn" href="sms:' + contacts[i].phoneNumbers[0].value + '?body=doe mee potta" ><span class="invite"></a></li>');
 
 		}
 	}
